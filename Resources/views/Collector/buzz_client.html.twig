@@ -74,7 +74,7 @@
                 <tr>
                     <th>Content</th>
                     <td>
-                        {{ call.request.getContent()|raw }}
+                        <pre>{{ call.request.getContent() }}</pre>
                     </td>
                 </tr>
             </table>
@@ -86,7 +86,7 @@
                 </tr>
                 <tr>
                     <th>Content</th>
-                    <td>{{ call.response.getContent() }}</td>
+                    <td><pre>{{ call.response.getContent() }}</pre></td>
                 </tr>
             </table>
             {% endfor %}
